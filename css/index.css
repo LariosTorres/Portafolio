@@ -14,8 +14,11 @@
     color: #1E1E1E;
     font-weight: 700;
 }
-.container.dark nav ul li button img.luna, .container.dark div p, .container.dark div img{
+.container.dark nav ul li button img.luna, .container.dark div p, .container.dark div img:not(.foto-propia),.container.dark div p, .container.dark div,.container.dark div p{
     filter: invert(100%);
+}
+.container.dark div.box2{
+    background: #1e1e1ed3;
 }
 .container.dark nav ul li button.resume-btn{
     color: #1E1E1E;
@@ -88,6 +91,7 @@ a{
 .presentacion-seccion{
     width: 100%;
     height: auto;
+    display: inline-flex;
 }
 .presentacion{
     width: 30%;
@@ -119,4 +123,48 @@ a{
     color: #b2b2b2;
     font-size: smaller;
     text-align: justify;
+}
+.foto{
+    display: block;
+    width: 50%;
+    height: 100%;
+    padding-top: 2.5%;
+}
+.box1{
+    width: 50%;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    background: #7E74F1;
+    border-radius: 50px;
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+}
+.box2{
+    width: 100%;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    background: #f1f1f1;
+    border-radius: 50px;
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    transform: rotate(10deg);
+  }
+.box2 img{
+    width: 100%;
+    height: auto; 
+}
+@supports(object-fit: contain){
+      .box2 img{
+        height: 100%;
+        object-fit: contain;
+        object-position: center center;
+        border-radius: 50px;
+      }
 }
