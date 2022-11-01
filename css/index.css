@@ -14,7 +14,7 @@
     color: #1E1E1E;
     font-weight: 700;
 }
-.container.dark nav ul li button img.luna, .container.dark div p, .container.dark div img:not(.foto-propia),.container.dark div p, .container.dark div,.container.dark div p{
+.container.dark nav ul li button img.luna, .container.dark div p,.container.dark div img.logotipo, .container.dark div img:not(.foto-propia){
     filter: invert(100%);
 }
 .container.dark div.box2{
